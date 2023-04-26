@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MyFavoritePlaces
 //
-//  Created by Екатерина  on 26.04.23.
+//  Created by Katsiaryna Kulik on 26.04.23.
 //
 
 import UIKit
