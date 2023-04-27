@@ -15,6 +15,7 @@
 		C4565B1C29F87C82007CF492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4565B0D29F86D77007CF492 /* Assets.xcassets */; };
 		C4565B1E29F9A285007CF492 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B1D29F9A285007CF492 /* CustomTableViewCell.swift */; };
 		C4565B2029F9A896007CF492 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B1F29F9A896007CF492 /* PlaceModel.swift */; };
+		C4565B2229F9C04C007CF492 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B2129F9C04C007CF492 /* NewPlaceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C4565B1A29F8719B007CF492 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C4565B1D29F9A285007CF492 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		C4565B1F29F9A896007CF492 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		C4565B2129F9C04C007CF492 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				C4565B0429F86D75007CF492 /* AppDelegate.swift */,
 				C4565B1A29F8719B007CF492 /* MainViewController.swift */,
+				C4565B2129F9C04C007CF492 /* NewPlaceViewController.swift */,
 				C4565B1F29F9A896007CF492 /* PlaceModel.swift */,
 				C4565B1D29F9A285007CF492 /* CustomTableViewCell.swift */,
 				C4565B0629F86D75007CF492 /* SceneDelegate.swift */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4565B1B29F8719B007CF492 /* MainViewController.swift in Sources */,
+				C4565B2229F9C04C007CF492 /* NewPlaceViewController.swift in Sources */,
 				C4565B0529F86D75007CF492 /* AppDelegate.swift in Sources */,
 				C4565B2029F9A896007CF492 /* PlaceModel.swift in Sources */,
 				C4565B1E29F9A285007CF492 /* CustomTableViewCell.swift in Sources */,
