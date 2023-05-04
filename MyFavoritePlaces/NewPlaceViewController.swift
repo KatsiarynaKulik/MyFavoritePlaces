@@ -21,11 +21,10 @@ class NewPlaceViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.tableFooterView = UIView()
-        saveButton.isEnabled = false
-        placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+      tableView.tableFooterView = UIView()
+      saveButton.isEnabled = false
+      placeName.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
       setupEditScreen()
-        
     }
     
 // MARK: Table view delegate

@@ -18,6 +18,7 @@
 		C4565B2029F9A896007CF492 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B1F29F9A896007CF492 /* PlaceModel.swift */; };
 		C4565B2229F9C04C007CF492 /* NewPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B2129F9C04C007CF492 /* NewPlaceViewController.swift */; };
 		C4565B2429FDB80D007CF492 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B2329FDB80D007CF492 /* StorageManager.swift */; };
+		C45D08262A0438DA003746DC /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45D08252A0438DA003746DC /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C4565B1F29F9A896007CF492 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		C4565B2129F9C04C007CF492 /* NewPlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPlaceViewController.swift; sourceTree = "<group>"; };
 		C4565B2329FDB80D007CF492 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C45D08252A0438DA003746DC /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				C4565B1F29F9A896007CF492 /* PlaceModel.swift */,
 				C4565B2329FDB80D007CF492 /* StorageManager.swift */,
 				C4565B1D29F9A285007CF492 /* CustomTableViewCell.swift */,
+				C45D08252A0438DA003746DC /* RatingControl.swift */,
 				C4565B0629F86D75007CF492 /* SceneDelegate.swift */,
 				C4565B0A29F86D75007CF492 /* Main.storyboard */,
 				C4565B0D29F86D77007CF492 /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 				C4565B2229F9C04C007CF492 /* NewPlaceViewController.swift in Sources */,
 				C4565B0529F86D75007CF492 /* AppDelegate.swift in Sources */,
 				C4565B2429FDB80D007CF492 /* StorageManager.swift in Sources */,
+				C45D08262A0438DA003746DC /* RatingControl.swift in Sources */,
 				C4565B2029F9A896007CF492 /* PlaceModel.swift in Sources */,
 				C4565B1E29F9A285007CF492 /* CustomTableViewCell.swift in Sources */,
 				C4565B0729F86D75007CF492 /* SceneDelegate.swift in Sources */,

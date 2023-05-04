@@ -154,6 +154,28 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="140" id="Dh0-Cf-QyX">
+                                        <rect key="frame" x="0.0" y="525" width="393" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dh0-Cf-QyX" id="eoI-Ys-2oi">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="StZ-wc-zGG" customClass="RatingControl" customModule="MyFavoritePlaces" customModuleProvider="target">
+                                                    <rect key="frame" x="96" y="15" width="200" height="110"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starCount">
+                                                            <integer key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="StZ-wc-zGG" firstAttribute="centerX" secondItem="eoI-Ys-2oi" secondAttribute="centerX" id="dp2-AE-bIC"/>
+                                                <constraint firstItem="StZ-wc-zGG" firstAttribute="centerY" secondItem="eoI-Ys-2oi" secondAttribute="centerY" id="i0E-h4-uic"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -196,7 +218,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="K3j-Mw-A09">
-                                <rect key="frame" x="0.0" y="133" width="393" height="719"/>
+                                <rect key="frame" x="0.0" y="177" width="393" height="675"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -249,7 +271,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imageOfPlace" destination="Xdr-ZF-1AX" id="j1I-F1-DLf"/>
-                                            <outlet property="lacationLabel" destination="2kv-Ym-f3E" id="YFy-39-De0"/>
+                                            <outlet property="locationLabel" destination="2kv-Ym-f3E" id="YFy-39-De0"/>
                                             <outlet property="nameLabel" destination="tNk-4t-Egg" id="kcZ-Xj-qrW"/>
                                             <outlet property="typeLabel" destination="Cps-n1-YEn" id="Riq-9E-nju"/>
                                             <segue destination="8jN-z0-0W2" kind="show" identifier="showDetail" id="iBH-EM-v0d"/>
@@ -262,7 +284,7 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oYq-4f-Lhs">
-                                <rect key="frame" x="0.0" y="101" width="393" height="32"/>
+                                <rect key="frame" x="0.0" y="145" width="393" height="32"/>
                                 <segments>
                                     <segment title="Date"/>
                                     <segment title="Name"/>
@@ -275,10 +297,9 @@
                         <viewLayoutGuide key="safeArea" id="8Z7-Tk-mQ0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oYq-4f-Lhs" firstAttribute="trailing" secondItem="8Z7-Tk-mQ0" secondAttribute="trailing" id="Gey-G7-kOm"/>
-                            <constraint firstItem="oYq-4f-Lhs" firstAttribute="leading" secondItem="8Z7-Tk-mQ0" secondAttribute="leading" id="Mma-5f-Qpf"/>
+                            <constraint firstItem="oYq-4f-Lhs" firstAttribute="leading" secondItem="8Z7-Tk-mQ0" secondAttribute="leading" id="a4W-IM-7SJ"/>
+                            <constraint firstItem="oYq-4f-Lhs" firstAttribute="trailing" secondItem="8Z7-Tk-mQ0" secondAttribute="trailing" id="bqp-Sc-kta"/>
                             <constraint firstItem="K3j-Mw-A09" firstAttribute="top" secondItem="oYq-4f-Lhs" secondAttribute="bottom" constant="1" id="hhf-s8-kJJ"/>
-                            <constraint firstItem="oYq-4f-Lhs" firstAttribute="top" secondItem="zE5-wg-oer" secondAttribute="top" constant="101" id="pc2-SB-WZW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="My favorite places" largeTitleDisplayMode="never" id="CYh-RU-bkN">
