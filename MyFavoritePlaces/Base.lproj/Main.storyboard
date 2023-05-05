@@ -161,19 +161,19 @@
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="StZ-wc-zGG" customClass="RatingControl" customModule="MyFavoritePlaces" customModuleProvider="target">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="StZ-wc-zGG" customClass="RatingControl" customModule="MyFavoritePlaces" customModuleProvider="target">
                                                     <rect key="frame" x="96" y="15" width="200" height="110"/>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="starCount">
-                                                            <integer key="value" value="5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="StZ-wc-zGG" firstAttribute="centerX" secondItem="eoI-Ys-2oi" secondAttribute="centerX" id="dp2-AE-bIC"/>
-                                                <constraint firstItem="StZ-wc-zGG" firstAttribute="centerY" secondItem="eoI-Ys-2oi" secondAttribute="centerY" id="i0E-h4-uic"/>
+                                                <constraint firstItem="StZ-wc-zGG" firstAttribute="centerX" secondItem="eoI-Ys-2oi" secondAttribute="centerX" id="5mk-aY-0HO"/>
+                                                <constraint firstItem="StZ-wc-zGG" firstAttribute="centerY" secondItem="eoI-Ys-2oi" secondAttribute="centerY" id="bJq-kx-NOn"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="StZ-wc-zGG"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
@@ -201,6 +201,7 @@
                         <outlet property="placeLocation" destination="epe-SM-qaJ" id="mCZ-Y8-LxU"/>
                         <outlet property="placeName" destination="8Zq-UT-LPo" id="jWq-BN-VVX"/>
                         <outlet property="placeType" destination="Kof-PQ-fK1" id="3NM-YT-fcg"/>
+                        <outlet property="ratingControl" destination="StZ-wc-zGG" id="IrI-Ly-zyA"/>
                         <outlet property="saveButton" destination="8Gr-0R-AEP" id="0X8-O1-GT9"/>
                     </connections>
                 </tableViewController>
@@ -237,31 +238,40 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wHo-w7-JUA">
-                                                    <rect key="frame" x="96" y="8" width="281" height="69"/>
+                                                    <rect key="frame" x="96" y="8" width="57.333333333333343" height="69"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tNk-4t-Egg">
-                                                            <rect key="frame" x="0.0" y="0.0" width="281" height="24"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="57.333333333333336" height="24"/>
                                                             <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lacation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kv-Ym-f3E">
-                                                            <rect key="frame" x="0.0" y="27" width="281" height="20.333333333333329"/>
+                                                            <rect key="frame" x="0.0" y="27" width="57.333333333333336" height="20.333333333333329"/>
                                                             <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cps-n1-YEn">
-                                                            <rect key="frame" x="0.0" y="50.333333333333336" width="281" height="18.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="50.333333333333336" width="57.333333333333336" height="18.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="13"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gG-yM-oTG" customClass="CosmosView" customModule="Cosmos">
+                                                    <rect key="frame" x="291" y="29" width="90" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="wHo-w7-JUA" secondAttribute="trailing" constant="16" id="AsE-RE-Xoe"/>
                                                 <constraint firstItem="wHo-w7-JUA" firstAttribute="top" secondItem="lmQ-c3-y9q" secondAttribute="top" constant="8" id="FYr-5s-XCK"/>
                                                 <constraint firstItem="Xdr-ZF-1AX" firstAttribute="centerY" secondItem="lmQ-c3-y9q" secondAttribute="centerY" id="Fls-vH-E4b"/>
                                                 <constraint firstItem="Xdr-ZF-1AX" firstAttribute="leading" secondItem="lmQ-c3-y9q" secondAttribute="leading" constant="15" id="R25-gX-toO"/>
