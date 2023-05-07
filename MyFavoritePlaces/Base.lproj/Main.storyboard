@@ -264,18 +264,35 @@
                                     <action selector="closeVC" destination="0cD-vo-N6b" eventType="touchUpInside" id="ney-Ft-Okj"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mb-IQ-z5Q">
+                                <rect key="frame" x="303" y="752" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ux6-67-uGc"/>
+                                    <constraint firstAttribute="width" constant="50" id="nel-tG-iNn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="paperplane" catalog="system"/>
+                                <connections>
+                                    <action selector="centerViewInUserLocation" destination="0cD-vo-N6b" eventType="touchUpInside" id="Nvt-Oh-d6h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l1E-T4-46a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="l1E-T4-46a" firstAttribute="trailing" secondItem="3Mb-IQ-z5Q" secondAttribute="trailing" constant="40" id="6De-Fh-xOh"/>
                             <constraint firstAttribute="bottom" secondItem="BvX-jP-KFK" secondAttribute="bottom" id="Djf-WM-XNa"/>
                             <constraint firstItem="BvX-jP-KFK" firstAttribute="top" secondItem="vg0-2z-h0f" secondAttribute="top" id="d7S-1W-Xja"/>
+                            <constraint firstItem="l1E-T4-46a" firstAttribute="bottom" secondItem="3Mb-IQ-z5Q" secondAttribute="bottom" constant="40" id="dZQ-Ee-Mv6"/>
                             <constraint firstItem="BvX-jP-KFK" firstAttribute="leading" secondItem="l1E-T4-46a" secondAttribute="leading" id="hcI-Bj-5OL"/>
                             <constraint firstItem="BvX-jP-KFK" firstAttribute="trailing" secondItem="l1E-T4-46a" secondAttribute="trailing" id="lVc-8s-Goi"/>
                             <constraint firstItem="l1E-T4-46a" firstAttribute="trailing" secondItem="U9l-iZ-5BR" secondAttribute="trailing" constant="40" id="n4X-F4-nV6"/>
                             <constraint firstItem="U9l-iZ-5BR" firstAttribute="top" secondItem="l1E-T4-46a" secondAttribute="top" constant="40" id="oGg-rh-39N"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="BvX-jP-KFK" id="fbU-nC-Z9H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ey9-wy-H9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -469,6 +486,7 @@
         <image name="emptyStar" width="255" height="256"/>
         <image name="filledStar" width="237.5" height="238"/>
         <image name="map" width="50" height="50"/>
+        <image name="paperplane" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
