@@ -131,7 +131,7 @@
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" image="location.north" catalog="system"/>
                                                     <connections>
-                                                        <segue destination="0cD-vo-N6b" kind="presentation" identifier="getAdress" id="3GO-K3-Spj"/>
+                                                        <segue destination="0cD-vo-N6b" kind="presentation" identifier="getAddress" id="3GO-K3-Spj"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -314,6 +314,18 @@
                                     <action selector="doneButtonPressed" destination="0cD-vo-N6b" eventType="touchUpInside" id="FhA-Eb-CzQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S5-pC-FmL">
+                                <rect key="frame" x="171.66666666666666" y="752" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="H9x-Ec-KUX"/>
+                                    <constraint firstAttribute="width" constant="50" id="bmM-v6-L26"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="goButtonPressed" destination="0cD-vo-N6b" eventType="touchUpInside" id="bwc-qR-RR5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="l1E-T4-46a"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -322,11 +334,13 @@
                             <constraint firstItem="cbY-De-md5" firstAttribute="leading" secondItem="l1E-T4-46a" secondAttribute="leading" constant="16" id="6zJ-7i-0Mh"/>
                             <constraint firstItem="TEO-uD-dNC" firstAttribute="centerY" secondItem="vg0-2z-h0f" secondAttribute="centerY" constant="-20" id="9cb-9y-Zba"/>
                             <constraint firstAttribute="bottom" secondItem="BvX-jP-KFK" secondAttribute="bottom" id="Djf-WM-XNa"/>
+                            <constraint firstItem="7S5-pC-FmL" firstAttribute="centerX" secondItem="vg0-2z-h0f" secondAttribute="centerX" id="SpI-X3-QrQ"/>
                             <constraint firstItem="BvX-jP-KFK" firstAttribute="top" secondItem="cbY-De-md5" secondAttribute="bottom" constant="-192" id="XiE-oX-0qi"/>
                             <constraint firstItem="l1E-T4-46a" firstAttribute="trailing" secondItem="cbY-De-md5" secondAttribute="trailing" constant="16" id="Zaz-qx-FL5"/>
                             <constraint firstItem="TEO-uD-dNC" firstAttribute="centerX" secondItem="vg0-2z-h0f" secondAttribute="centerX" id="cAY-e7-8eA"/>
                             <constraint firstItem="BvX-jP-KFK" firstAttribute="top" secondItem="vg0-2z-h0f" secondAttribute="top" id="d7S-1W-Xja"/>
                             <constraint firstItem="l1E-T4-46a" firstAttribute="bottom" secondItem="3Mb-IQ-z5Q" secondAttribute="bottom" constant="40" id="dZQ-Ee-Mv6"/>
+                            <constraint firstItem="l1E-T4-46a" firstAttribute="bottom" secondItem="7S5-pC-FmL" secondAttribute="bottom" constant="40" id="ekT-eg-swo"/>
                             <constraint firstItem="l1E-T4-46a" firstAttribute="bottom" secondItem="cAi-9P-Pps" secondAttribute="bottom" constant="40" id="g5G-PR-jpf"/>
                             <constraint firstItem="BvX-jP-KFK" firstAttribute="leading" secondItem="l1E-T4-46a" secondAttribute="leading" id="hcI-Bj-5OL"/>
                             <constraint firstItem="cAi-9P-Pps" firstAttribute="centerX" secondItem="vg0-2z-h0f" secondAttribute="centerX" id="ic8-le-7QO"/>
@@ -336,8 +350,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="adressLabel" destination="cbY-De-md5" id="TSy-an-KIT"/>
+                        <outlet property="addressLabel" destination="cbY-De-md5" id="TSy-an-KIT"/>
                         <outlet property="doneButton" destination="cAi-9P-Pps" id="7NU-bF-kJ6"/>
+                        <outlet property="goButton" destination="7S5-pC-FmL" id="K91-ad-25c"/>
                         <outlet property="mapPinImage" destination="TEO-uD-dNC" id="9z2-Ui-b8j"/>
                         <outlet property="mapView" destination="BvX-jP-KFK" id="fbU-nC-Z9H"/>
                     </connections>
@@ -525,7 +540,7 @@
         </designable>
     </designables>
     <inferredMetricsTieBreakers>
-        <segue reference="OTb-BB-Msg"/>
+        <segue reference="3GO-K3-Spj"/>
         <segue reference="iBH-EM-v0d"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -538,6 +553,7 @@
         <image name="location.north.circle" catalog="system" width="128" height="123"/>
         <image name="map" width="50" height="50"/>
         <image name="paperplane" catalog="system" width="128" height="119"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
