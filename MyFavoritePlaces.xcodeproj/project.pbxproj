@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55998FBFCEEDDAF60CED7706 /* Pods_MyFavoritePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 700987F590E5B4A1A1B18925 /* Pods_MyFavoritePlaces.framework */; };
+		C43347612A0AEED300EBBF4F /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43347602A0AEED300EBBF4F /* MapManager.swift */; };
 		C4565B0529F86D75007CF492 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B0429F86D75007CF492 /* AppDelegate.swift */; };
 		C4565B0729F86D75007CF492 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4565B0629F86D75007CF492 /* SceneDelegate.swift */; };
 		C4565B0C29F86D75007CF492 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4565B0A29F86D75007CF492 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		3F9BCAE7E46529EAA12C7925 /* Pods-MyFavoritePlaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFavoritePlaces.debug.xcconfig"; path = "Target Support Files/Pods-MyFavoritePlaces/Pods-MyFavoritePlaces.debug.xcconfig"; sourceTree = "<group>"; };
 		700987F590E5B4A1A1B18925 /* Pods_MyFavoritePlaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFavoritePlaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A62876DBDF93F5C6311FDA38 /* Pods-MyFavoritePlaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFavoritePlaces.release.xcconfig"; path = "Target Support Files/Pods-MyFavoritePlaces/Pods-MyFavoritePlaces.release.xcconfig"; sourceTree = "<group>"; };
+		C43347602A0AEED300EBBF4F /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		C4565B0129F86D75007CF492 /* MyFavoritePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFavoritePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4565B0429F86D75007CF492 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4565B0629F86D75007CF492 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C43347622A0AF4E400EBBF4F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4565B1A29F8719B007CF492 /* MainViewController.swift */,
+				C4565B2129F9C04C007CF492 /* NewPlaceViewController.swift */,
+				C4BF5B612A06EA660021C48F /* MapViewController.swift */,
+				C4565B1D29F9A285007CF492 /* CustomTableViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C43347632A0AF54000EBBF4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4565B1F29F9A896007CF492 /* PlaceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C43347642A0AF55900EBBF4F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C43347602A0AEED300EBBF4F /* MapManager.swift */,
+				C4565B2329FDB80D007CF492 /* StorageManager.swift */,
+				C45D08252A0438DA003746DC /* RatingControl.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C43347652A0AF5C800EBBF4F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C4565B0629F86D75007CF492 /* SceneDelegate.swift */,
+				C4565B0429F86D75007CF492 /* AppDelegate.swift */,
+				C4565B0D29F86D77007CF492 /* Assets.xcassets */,
+				C4565B1229F86D77007CF492 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		C43347672A0AF68200EBBF4F /* IBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				C4565B0A29F86D75007CF492 /* Main.storyboard */,
+				C4565B0F29F86D77007CF492 /* LaunchScreen.storyboard */,
+			);
+			path = IBuilder;
+			sourceTree = "<group>";
+		};
 		C4565AF829F86D75007CF492 = {
 			isa = PBXGroup;
 			children = (
@@ -83,19 +134,11 @@
 		C4565B0329F86D75007CF492 /* MyFavoritePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				C4565B0429F86D75007CF492 /* AppDelegate.swift */,
-				C4565B1A29F8719B007CF492 /* MainViewController.swift */,
-				C4565B2129F9C04C007CF492 /* NewPlaceViewController.swift */,
-				C4BF5B612A06EA660021C48F /* MapViewController.swift */,
-				C4565B1F29F9A896007CF492 /* PlaceModel.swift */,
-				C4565B2329FDB80D007CF492 /* StorageManager.swift */,
-				C4565B1D29F9A285007CF492 /* CustomTableViewCell.swift */,
-				C45D08252A0438DA003746DC /* RatingControl.swift */,
-				C4565B0629F86D75007CF492 /* SceneDelegate.swift */,
-				C4565B0A29F86D75007CF492 /* Main.storyboard */,
-				C4565B0D29F86D77007CF492 /* Assets.xcassets */,
-				C4565B0F29F86D77007CF492 /* LaunchScreen.storyboard */,
-				C4565B1229F86D77007CF492 /* Info.plist */,
+				C43347622A0AF4E400EBBF4F /* View Controllers */,
+				C43347642A0AF55900EBBF4F /* Helpers */,
+				C43347632A0AF54000EBBF4F /* Models */,
+				C43347652A0AF5C800EBBF4F /* Support Files */,
+				C43347672A0AF68200EBBF4F /* IBuilder */,
 			);
 			path = MyFavoritePlaces;
 			sourceTree = "<group>";
@@ -230,6 +273,7 @@
 				C4565B2429FDB80D007CF492 /* StorageManager.swift in Sources */,
 				C4BF5B622A06EA660021C48F /* MapViewController.swift in Sources */,
 				C45D08262A0438DA003746DC /* RatingControl.swift in Sources */,
+				C43347612A0AEED300EBBF4F /* MapManager.swift in Sources */,
 				C4565B2029F9A896007CF492 /* PlaceModel.swift in Sources */,
 				C4565B1E29F9A285007CF492 /* CustomTableViewCell.swift in Sources */,
 				C4565B0729F86D75007CF492 /* SceneDelegate.swift in Sources */,
@@ -382,7 +426,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XN7SPBLRTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyFavoritePlaces/Info.plist;
+				INFOPLIST_FILE = "MyFavoritePlaces/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -411,7 +455,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XN7SPBLRTW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyFavoritePlaces/Info.plist;
+				INFOPLIST_FILE = "MyFavoritePlaces/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
