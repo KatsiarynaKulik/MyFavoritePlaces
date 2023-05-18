@@ -3,6 +3,7 @@
 //  MyFavoritePlaces
 //
 //  Created by Katsiaryna Kulik  on 7.05.23.
+//  Copyright © 2023 Katsiaryna Kulik. All rights reserved.
 //
 
 import UIKit

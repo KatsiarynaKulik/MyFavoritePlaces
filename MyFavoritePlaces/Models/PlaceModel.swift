@@ -2,7 +2,8 @@
 //  PlaceModel.swift
 //  MyFavoritePlaces
 //
-//  Created by Katsiaryna Kulik on 26.04.23.
+//  Created by Katsiaryna Kulik  on 26.04.23.
+//  Copyright © 2023 Katsiaryna Kulik. All rights reserved.
 //
 
 import RealmSwift

@@ -2,7 +2,8 @@
 //  NewPlaceViewController.swift
 //  MyFavoritePlaces
 //
-//  Created by Екатерина  on 27.04.23.
+//  Created by Katsiaryna Kulik  on 27.04.23.
+//  Copyright © 2023 Katsiaryna Kulik. All rights reserved.
 //
 
 import UIKit
